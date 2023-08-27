@@ -966,24 +966,6 @@ class NewPoll extends React.Component<INewPollProps, formState> {
                                                     },
                                                 },
                                                 {
-                                                    name: "allUsers",
-                                                    key: "allUsers",
-                                                    value: "allUsers",
-                                                    label: this.localize("SendToAllUsers"),
-                                                    children: (Component, { name, ...props }) => {
-                                                        return (
-                                                            <Flex key={name} column>
-                                                                <Component {...props} />
-                                                                <div className={this.state.selectedRadioBtn === "allUsers" ? "" : "hide"}>
-                                                                    <div className="noteText">
-                                                                        <Text error content={this.localize("SendToAllUsersNote")} />
-                                                                    </div>
-                                                                </div>
-                                                            </Flex>
-                                                        )
-                                                    },
-                                                },
-                                                {
                                                     name: "groups",
                                                     key: "groups",
                                                     value: "groups",
